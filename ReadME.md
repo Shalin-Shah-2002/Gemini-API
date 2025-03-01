@@ -25,6 +25,18 @@ Before running the project, make sure to install the necessary dependencies. Run
 npm i @google/generative-ai@^0.22.0 axios@^1.8.1 cors@^2.8.5 dotenv@^16.4.7 express@^4.21.2 gemini-api@file:
 ```
 
+## Using the Live API
+This API is live and can be accessed at:
+**Endpoint:** `https://gemini-api-gjrq.onrender.com/generate`
+
+### Sending a POST Request
+Use your favorite API tool (e.g., Postman, Insomnia) to send a POST request with the following JSON format:
+```json
+{
+  "prompt": "Generate a structured exercise plan of Deadlift with the following details. Ensure the response follows the exact format mentioned below:\n\nResponse Format:\n``\n**Exercise Name:** \n**Description:** \n**Recommended Reps:**\n- **Beginners:** \n- **Intermediate:** \n- **Professional:** \n``"
+}
+```
+
 ## Important Notes
 - **Do NOT share your `.env` file** or commit it to version control (e.g., GitHub). Add `.env` to `.gitignore`.
 - If you accidentally expose your API key, **revoke it immediately** and generate a new one.

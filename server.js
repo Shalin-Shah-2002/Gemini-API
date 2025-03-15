@@ -30,7 +30,7 @@ app.post('/generate', async (req, res) => {
 
     } catch (error) {
         console.error("Gemini API Error:", error.message);
-        res.status(500).json({ error: "Failed to fetch response from Gemini API" });
+        res.status(500).json({ error: "Failed to fetch response from Gemini API 🫡" });
     }
 });
 
